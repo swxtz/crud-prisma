@@ -37,4 +37,5 @@ model MovieRent {
   Movie   Movie  @relation(fields: [movieId], references: [id])
 
   @@id([userId, movieId])
+  @@map("movie_rent")
 }
